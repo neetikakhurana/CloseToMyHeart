@@ -217,18 +217,18 @@ body{
     }  
     #countdown{
         width: 83%;
-        height: 18%;
+        height: 19%;
     }
     #countdown:before{
         content:"";
         width: 8px;
-        height: 40%;
+        height: 30%;
     }
 
     #countdown:after{
         content:"";
         width: 8px;
-        height: 40%;
+        height: 30%;
     }
 
     #countdown #tiles > span{
@@ -283,13 +283,13 @@ body{
     #countdown:before{
         content:"";
         width: 8px;
-        height: 40%;
+        height: 30%;
     }
 
     #countdown:after{
         content:"";
         width: 8px;
-        height: 40%;
+        height: 30%;
     }
     #countdown #tiles > span{
         width: 18%;
