@@ -295,27 +295,28 @@
 </body>
 <script>
     $(document).ready(function(){
-        var target_date = new Date().getTime() + (new Date(2017, 5, 6)-new Date().getTime());
+        var target_date = new Date("May 6, 2017 00:00:00").getTime();
 
-        if(target_date!=0){
-    console.log(target_date);
-    $('#body').addClass('body1');
-   // $('#change').hide();
-    $('#countdown').removeClass('hidden');
-    var days, hours, minutes, seconds; // variables for time units
+    if(target_date!=0){
+        console.log(target_date);
+        $('#body').addClass('body1');
+       // $('#change').hide();
+        $('#countdown').removeClass('hidden');
+        var days, hours, minutes, seconds; // variables for time units
 
-//$("#tiles").clone().appendTo($("#countdown"));
-//$( "#tiles" ).appendTo( "#countdown"); // get tag element
-console.log("countdown"+countdown);
-getCountdown();
+        //$("#tiles").clone().appendTo($("#countdown"));
+        //$( "#tiles" ).appendTo( "#countdown"); // get tag element
+        console.log("countdown"+countdown);
+        getCountdown();
 
-setInterval(function () { getCountdown(); }, 1000);
-}else{
+        setInterval(function () { getCountdown(); }, 1000);
+    }
+    else{
         $('#countdown').addClass('hidden');
         $('#change').removeClass('hidden');
 
 
-}
+    }
 
 function getCountdown(){
 
