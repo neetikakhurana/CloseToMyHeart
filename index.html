@@ -1114,8 +1114,9 @@
     $(document).ready(function(){
         //"May 5, 2017 14:30:00"
         var target_date = new Date("May 6, 2017 00:00:00").getTime();
-
-    if(target_date-(new Date().getTime())!=0){
+        console.log(target_date);
+        console.log(new Date().getTime());
+    if(target_date-(new Date().getTime())>0){
         console.log(target_date);
         $('#body').addClass('body1');
        // $('#change').hide();
